@@ -1,0 +1,37 @@
+<section class="wholeDestinations">
+    <div class="text-center">
+        <h3 class="headDest">Trending Destinations</h3>
+        <p class="descDest">Your Next Sonesta Adventure Awaits!</p>
+        <button class="expBtn"><a href="" class="text-uppercase expTxt">Explore All Locations</a></button>
+    </div>
+    <main class="container box">
+        <div class="row pt-2">
+            @for (item of firsttrendingDest; track $index) {
+                <div class="col-lg-4 first">
+                    <div class="card border-0 h-100 pb-4">
+                        <img src="{{item.imgUrl}}" class="card-img-top" alt="Img">
+                        <div class="card-body text-center h-100">
+                            <h4 class="eachHead">{{item.title}}</h4>
+                            <p class="eachDesc">{{item.desc}}</p>
+                            <a href="#" class="eachBtn">{{item.btn}}</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row secondRow">
+            @for (item of secondtrendingDest; track $index) {
+                <div class="col-lg-4 first">
+                    <div class="card border-0 h-100">
+                        <img src="{{item.imgUrl}}" class="card-img-top" alt="Img">
+                        <div class="card-body text-center h-100">
+                            <h4 class="eachHead">{{item.title}}</h4>
+                            <p class="eachDesc">{{item.desc}}</p>
+                            <a href="#" class="eachBtn">{{item.btn}}</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
+</section>

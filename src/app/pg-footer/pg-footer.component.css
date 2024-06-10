@@ -1,0 +1,103 @@
+.container-fluid{
+    background-color: black;
+}
+
+.myrow,.cardBox{
+    border-bottom: 1px solid rgb(92, 91, 91);
+}
+
+.box{
+    padding: 40px 50px 40px 50px;
+}
+
+.headLi{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #e5e5e5;
+    font-weight: 900;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+li{
+    list-style-type: none;
+}
+
+.eachLi{
+    line-height: 34px;
+    font-size: 14px;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.eachLi:hover{
+    color: white;
+}
+
+.SonestaCard{
+    background: #333;
+    border-radius: 8px;
+    margin: 3px 0 55px;
+    padding: 24px 32px;
+    color: #eee;
+}
+
+.cardDesc{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.note{
+    color: silver;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.applybtn{
+    background: #fff;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 25px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.applytxt{
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.btnTxt{
+    color: silver;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.rights{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0;
+    text-align: center;
+    color: #eee;
+}
+
+@media screen and (min-width: 368px) {
+    .SonestaCard{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .myrow{
+        display: none;
+    }
+}

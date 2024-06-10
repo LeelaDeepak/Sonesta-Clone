@@ -1,0 +1,30 @@
+
+.container{
+    padding: 30px 80px 80px 80px;
+}
+
+.eachHead{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem !important;
+}
+
+.eachDesc{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.eachBtn{
+    border-bottom: 2px solid;
+    color: #404040;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        padding: 10px 30px 10px 30px;
+    }
+}
+

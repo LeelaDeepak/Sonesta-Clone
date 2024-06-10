@@ -1,0 +1,128 @@
+.wholeSecondNav{
+    padding: 0px 40px 0px 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.usrDate{
+    width: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: 500;
+}
+
+.datePart{
+    display: flex;
+}
+
+.findBtn{
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.findPart{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.roomGuest{
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    height: 44px;
+    background: transparent url(/assets/sonestaDownArrow1.png) no-repeat right 1px center;
+    background-size: 25px auto;
+    line-height: 1;
+    transition: box-shadow 0.3s ease;
+    padding: 10px 40px 10px 20px;
+    text-align: left;
+    -webkit-appearance: none; /* Remove default arrow in Chrome/Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in other browsers */
+}
+
+.roomGuest:hover{
+    box-shadow: 0 0 10px rgba(0.7, 0.7, 0.7, 0.7);
+    cursor: pointer;
+}
+
+.roomRates{
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    height: 44px;
+    background: transparent url(/assets/sonestaDownArrow1.png) no-repeat right 1px center;
+    background-size: 25px auto;
+    line-height: 1;
+    padding: 10px 40px 10px 20px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    -webkit-appearance: none; /* Remove default arrow in Chrome/Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in other browsers */
+}
+
+.roomRates:hover{
+    box-shadow: 0 0 10px rgba(0.7, 0.7, 0.7, 0.7);
+    cursor: pointer;
+}
+
+
+.showDate{
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+
+
+.searchInput{
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    color: #333 !important;
+    font-size: 14px;
+    height: 44px;
+    width: 325px;
+    padding: 0px 0px 0px 10px !important;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+}
+
+.searchsmInput{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+   
+    .wholeSecondNav{
+        display: none;
+    }
+
+    .searchsmInput{
+        margin-top: 1.5rem;
+        display: block;
+        width: 100%;
+        height: 44px;
+        padding: 0px 0px 0px 10px !important;
+        text-overflow: ellipsis;
+        border-radius: 5px;
+        background: #fff;
+        border: 1px solid #d3d3d3;
+        color: #333 !important;
+        font-size: 14px;
+    }
+    
+}

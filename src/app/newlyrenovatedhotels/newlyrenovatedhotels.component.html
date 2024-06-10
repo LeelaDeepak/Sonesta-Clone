@@ -1,0 +1,22 @@
+<section class="wholeNewlyRenovatedHotels">
+    <div class="text-center">
+        <h3 class="headDest">Newly Opened Hotels</h3>
+        <p class="descDest">Sonesta is enhancing! Explore our recently renovated hotels.</p>
+    </div>
+    <main class="container">
+        <div class="row pt-2">
+            @for (item of renovatedHotels; track $index) {
+                <div class="col-lg-4 pt-4">
+                    <div class="card border-0 h-100 pb-4">
+                        <img src="{{item.imgUrl}}" class="card-img-top" alt="Img">
+                        <div class="card-body text-center h-100 ">
+                            <h4 class="eachHead">{{item.title}}</h4>
+                            <p class="eachDesc">{{item.desc}}</p>
+                            <a href="#" class="eachBtn">{{item.btn}}</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
+</section>

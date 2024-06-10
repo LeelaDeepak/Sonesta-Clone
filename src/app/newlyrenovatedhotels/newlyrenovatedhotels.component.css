@@ -1,0 +1,40 @@
+.container{
+    padding: 0px 79px 40px 79px;
+}
+
+.headDest{
+    padding-top: 2.5rem;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 1.5rem;
+}
+
+.descDest{
+    font-size: 16px;
+}
+
+.eachHead{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem !important;
+}
+
+.eachDesc{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.eachBtn{
+    border-bottom: 2px solid;
+    color: #404040;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        padding: 10px 30px 10px 30px;
+    }
+}

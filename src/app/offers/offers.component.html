@@ -1,0 +1,45 @@
+<section class="container-fluid offers text-center">
+    <span class="offerHead">offers & packages</span>
+    <p class="offerLine pt-2">Pave the way for adventure—and save—with our latest hotel offers.</p>
+    <a href="#" class="exploreLink">Explore All Offers</a>
+    <main class="allOffers p-2">
+        <div class="row mt-5 d-flex justify-content-center">
+            @for (item of firstoffersData; track $index) {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border-0 h-100 card p-2">
+                      <img src="{{ item.imgUrl }}" class="card-img-top eachImg" alt="Offer Image">
+                      <div class="card-body">
+                        <h5 class="eachTitle mb-2">{{ item.title }}</h5>
+                        <p class="eachDesc mt-3">{{ item.body }}</p>
+                      </div>
+                      <button class="eachBtn">{{ item.button }}</button>
+                      <span class="linkAdjust"><a class="eachLink" href="#">{{ item.learn }}</a></span>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        @if (showSecondRow) {
+            <div class="row mt-5">
+            @for (item of secondOffersData; track $index) {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border-0 h-100 card p-2 ">
+                      <img src="{{ item.imgUrl }}" class="card-img-top eachImg" alt="Offer Image">
+                      <div class="card-body">
+                        <h5 class="eachTitle mb-2">{{ item.title }}</h5>
+                        <p class="eachDesc mt-3">{{ item.body }}</p>
+                      </div>
+                      <button class="eachBtn">{{ item.button }}</button>
+                      <span class="linkAdjust"><a class="eachLink">{{ item.learn }}</a></span>
+                    </div>
+                </div>
+            }
+        </div>
+        }
+    </main>
+    @if (showSecondRow) {
+        <div class="adjustOffers"><a class="exploreLink" (click)="showRow()">Show Less Offers -</a></div>
+    }@else {
+        <div class="adjustOffers"><a class="exploreLink" (click)="showRow()">Show More Offers +</a></div>
+    }
+</section>

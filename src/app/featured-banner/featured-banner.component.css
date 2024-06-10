@@ -1,0 +1,82 @@
+.box{
+    padding: 80px;
+}
+
+.textSide{
+    background-color:#fff;
+    border: 1px solid lightgray;
+}
+
+.passImg{
+    height: 380px !important;
+    width: 100% !important;
+}
+
+.card-body{
+    padding-top: 70px;
+}
+
+.travelHead{
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 34px;
+    margin-bottom: 1rem;
+}
+
+.travelDesc{
+    text-align: left !important;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.travelLine{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.exploreLink{
+    border-bottom: 2px solid #707070;
+    color: #333;
+    font-size: .875rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.exploreLink:hover{
+    border-bottom: none;
+}
+
+.adjustOffers{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.col-lg-6{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .travelDesc{
+        padding: 10px;
+    }
+
+    .travelHead{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .card-body{
+        padding-top: 20px;
+    }
+
+    .box{
+        padding: 50px;
+    }
+}
+

@@ -1,0 +1,50 @@
+.wholeFirstNav{
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.01px solid rgb(240, 240, 240);
+}
+
+.logo{
+    padding: 0px 10px 10px 10px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.firstPart{
+    display: flex;
+}
+
+.secondPart{
+    display: flex;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+li{
+    margin-top: 15px;
+}
+
+
+li a{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    .wholeFirstNav{
+        display: none;
+    }
+}
